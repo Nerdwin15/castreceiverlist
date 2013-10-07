@@ -1,8 +1,18 @@
 $.fn.castReceiverList = function(options) {
   var defaults = {
+    api : null,
+    appId : null,
     onSelect : function(receiver) {}
   };
   var settings = $.extend({}, defaults, options);
+  var errorOut = function(message) {
+    console.error(message);
+  };
+
+  if (settings.api == null)
+    return errorOut("The api must be provided for castReceiverList");
+  if (settings.appId == null)
+    return errorOut("The appId must be provided for castReceiverList");
   
   return this.each(function() {
     var $this = $(this);
