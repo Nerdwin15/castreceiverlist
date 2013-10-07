@@ -1,7 +1,7 @@
 Google Cast Receiver Bootstrap Plugin
 ================
 
-This plugin is a simple jQuery plugin that binds to an existing Boostrap button dropdown and populates it with all available Google Cast receivers.
+This plugin is a simple jQuery plugin that binds to an existing Bootstrap button dropdown and populates it with all available Google Cast receivers.
 
 ## Usage
 
